@@ -33,7 +33,7 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 
-	kvcorev1 "github.com/alauda/kubevirt/client-go/kubevirt/typed/core/v1"
+	kvcorev1 "github.com/alauda/kubevirt-client-go/kubevirt/typed/core/v1"
 	v1 "kubevirt.io/api/core/v1"
 )
 

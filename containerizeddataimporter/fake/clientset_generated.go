@@ -24,11 +24,11 @@ import (
 	"k8s.io/client-go/discovery"
 	fakediscovery "k8s.io/client-go/discovery/fake"
 	"k8s.io/client-go/testing"
-	clientset "github.com/alauda/kubevirt/client-go/containerizeddataimporter"
-	cdiv1beta1 "github.com/alauda/kubevirt/client-go/containerizeddataimporter/typed/core/v1beta1"
-	fakecdiv1beta1 "github.com/alauda/kubevirt/client-go/containerizeddataimporter/typed/core/v1beta1/fake"
-	uploadv1beta1 "github.com/alauda/kubevirt/client-go/containerizeddataimporter/typed/upload/v1beta1"
-	fakeuploadv1beta1 "github.com/alauda/kubevirt/client-go/containerizeddataimporter/typed/upload/v1beta1/fake"
+	clientset "github.com/alauda/kubevirt-client-go/containerizeddataimporter"
+	cdiv1beta1 "github.com/alauda/kubevirt-client-go/containerizeddataimporter/typed/core/v1beta1"
+	fakecdiv1beta1 "github.com/alauda/kubevirt-client-go/containerizeddataimporter/typed/core/v1beta1/fake"
+	uploadv1beta1 "github.com/alauda/kubevirt-client-go/containerizeddataimporter/typed/upload/v1beta1"
+	fakeuploadv1beta1 "github.com/alauda/kubevirt-client-go/containerizeddataimporter/typed/upload/v1beta1/fake"
 )
 
 // NewSimpleClientset returns a clientset that will respond with the provided objects.

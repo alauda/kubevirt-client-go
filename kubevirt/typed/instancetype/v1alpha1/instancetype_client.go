@@ -23,7 +23,7 @@ import (
 
 	rest "k8s.io/client-go/rest"
 	v1alpha1 "kubevirt.io/api/instancetype/v1alpha1"
-	"github.com/alauda/kubevirt/client-go/kubevirt/scheme"
+	"github.com/alauda/kubevirt-client-go/kubevirt/scheme"
 )
 
 type InstancetypeV1alpha1Interface interface {

@@ -31,7 +31,7 @@ import (
 	"github.com/onsi/gomega/ghttp"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/alauda/kubevirt/client-go/version"
+	"github.com/alauda/kubevirt-client-go/version"
 )
 
 var _ = Describe("Kubevirt Version Client", func() {

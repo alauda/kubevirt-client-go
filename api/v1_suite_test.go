@@ -22,7 +22,7 @@ package api
 import (
 	"testing"
 
-	"github.com/alauda/kubevirt/client-go/testutils"
+	"github.com/alauda/kubevirt-client-go/testutils"
 )
 
 func TestV1(t *testing.T) {

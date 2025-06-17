@@ -26,8 +26,8 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/testing"
 
-	kubevirtv1 "github.com/alauda/kubevirt/client-go/kubevirt/typed/core/v1"
-	fake2 "github.com/alauda/kubevirt/client-go/testing"
+	kubevirtv1 "github.com/alauda/kubevirt-client-go/kubevirt/typed/core/v1"
+	fake2 "github.com/alauda/kubevirt-client-go/testing"
 	v1 "kubevirt.io/api/core/v1"
 )
 

@@ -23,7 +23,7 @@ import (
 
 	v1 "github.com/k8snetworkplumbingwg/network-attachment-definition-client/pkg/apis/k8s.cni.cncf.io/v1"
 	rest "k8s.io/client-go/rest"
-	"github.com/alauda/kubevirt/client-go/networkattachmentdefinitionclient/scheme"
+	"github.com/alauda/kubevirt-client-go/networkattachmentdefinitionclient/scheme"
 )
 
 type K8sCniCncfIoV1Interface interface {

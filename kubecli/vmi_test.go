@@ -36,8 +36,8 @@ import (
 	k8smetav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/alauda/kubevirt/client-go/api"
-	kvcorev1 "github.com/alauda/kubevirt/client-go/kubevirt/typed/core/v1"
+	"github.com/alauda/kubevirt-client-go/api"
+	kvcorev1 "github.com/alauda/kubevirt-client-go/kubevirt/typed/core/v1"
 	v1 "kubevirt.io/api/core/v1"
 )
 

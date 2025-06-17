@@ -27,7 +27,7 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/alauda/kubevirt/client-go/log"
+	"github.com/alauda/kubevirt-client-go/log"
 	v1 "kubevirt.io/api/core/v1"
 )
 

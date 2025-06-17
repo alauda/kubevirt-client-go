@@ -16,7 +16,7 @@
 def version_x_defs():
     # This should match the list of packages in kube::version::ldflag
     stamp_pkgs = [
-        "github.com/alauda/kubevirt/client-go/version",
+        "github.com/alauda/kubevirt-client-go/version",
     ]
 
     # This should match the list of vars in kube::version::ldflags

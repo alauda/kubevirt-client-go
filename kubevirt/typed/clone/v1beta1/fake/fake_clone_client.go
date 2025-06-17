@@ -21,7 +21,7 @@ package fake
 import (
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"
-	v1beta1 "github.com/alauda/kubevirt/client-go/kubevirt/typed/clone/v1beta1"
+	v1beta1 "github.com/alauda/kubevirt-client-go/kubevirt/typed/clone/v1beta1"
 )
 
 type FakeCloneV1beta1 struct {

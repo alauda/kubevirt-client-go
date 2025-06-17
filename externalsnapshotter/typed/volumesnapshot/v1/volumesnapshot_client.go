@@ -23,7 +23,7 @@ import (
 
 	v1 "github.com/kubernetes-csi/external-snapshotter/client/v4/apis/volumesnapshot/v1"
 	rest "k8s.io/client-go/rest"
-	"github.com/alauda/kubevirt/client-go/externalsnapshotter/scheme"
+	"github.com/alauda/kubevirt-client-go/externalsnapshotter/scheme"
 )
 
 type SnapshotV1Interface interface {

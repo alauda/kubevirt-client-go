@@ -30,7 +30,7 @@ import (
 
 	routev1 "github.com/openshift/client-go/route/clientset/versioned/typed/route/v1"
 
-	clone "github.com/alauda/kubevirt/client-go/kubevirt/typed/clone/v1beta1"
+	clone "github.com/alauda/kubevirt-client-go/kubevirt/typed/clone/v1beta1"
 
 	secv1 "github.com/openshift/client-go/security/clientset/versioned/typed/security/v1"
 	extclient "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"
@@ -39,18 +39,18 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 
-	cdiclient "github.com/alauda/kubevirt/client-go/containerizeddataimporter"
-	k8ssnapshotclient "github.com/alauda/kubevirt/client-go/externalsnapshotter"
-	generatedclient "github.com/alauda/kubevirt/client-go/kubevirt"
-	kvcorev1 "github.com/alauda/kubevirt/client-go/kubevirt/typed/core/v1"
-	exportv1 "github.com/alauda/kubevirt/client-go/kubevirt/typed/export/v1beta1"
-	instancetypev1beta1 "github.com/alauda/kubevirt/client-go/kubevirt/typed/instancetype/v1beta1"
-	migrationsv1 "github.com/alauda/kubevirt/client-go/kubevirt/typed/migrations/v1alpha1"
-	poolv1 "github.com/alauda/kubevirt/client-go/kubevirt/typed/pool/v1alpha1"
-	snapshotv1 "github.com/alauda/kubevirt/client-go/kubevirt/typed/snapshot/v1beta1"
-	networkclient "github.com/alauda/kubevirt/client-go/networkattachmentdefinitionclient"
-	promclient "github.com/alauda/kubevirt/client-go/prometheusoperator"
-	"github.com/alauda/kubevirt/client-go/version"
+	cdiclient "github.com/alauda/kubevirt-client-go/containerizeddataimporter"
+	k8ssnapshotclient "github.com/alauda/kubevirt-client-go/externalsnapshotter"
+	generatedclient "github.com/alauda/kubevirt-client-go/kubevirt"
+	kvcorev1 "github.com/alauda/kubevirt-client-go/kubevirt/typed/core/v1"
+	exportv1 "github.com/alauda/kubevirt-client-go/kubevirt/typed/export/v1beta1"
+	instancetypev1beta1 "github.com/alauda/kubevirt-client-go/kubevirt/typed/instancetype/v1beta1"
+	migrationsv1 "github.com/alauda/kubevirt-client-go/kubevirt/typed/migrations/v1alpha1"
+	poolv1 "github.com/alauda/kubevirt-client-go/kubevirt/typed/pool/v1alpha1"
+	snapshotv1 "github.com/alauda/kubevirt-client-go/kubevirt/typed/snapshot/v1beta1"
+	networkclient "github.com/alauda/kubevirt-client-go/networkattachmentdefinitionclient"
+	promclient "github.com/alauda/kubevirt-client-go/prometheusoperator"
+	"github.com/alauda/kubevirt-client-go/version"
 	v1 "kubevirt.io/api/core/v1"
 )
 

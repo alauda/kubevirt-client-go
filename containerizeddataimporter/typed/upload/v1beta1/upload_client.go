@@ -22,7 +22,7 @@ import (
 	"net/http"
 
 	rest "k8s.io/client-go/rest"
-	"github.com/alauda/kubevirt/client-go/containerizeddataimporter/scheme"
+	"github.com/alauda/kubevirt-client-go/containerizeddataimporter/scheme"
 	v1beta1 "kubevirt.io/containerized-data-importer-api/pkg/apis/upload/v1beta1"
 )
 

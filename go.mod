@@ -1,4 +1,4 @@
-module github.com/alauda/kubevirt/client-go
+module github.com/alauda/kubevirt-client-go
 
 go 1.23.0
 

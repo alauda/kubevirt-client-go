@@ -31,7 +31,7 @@ import (
 
 	v1 "kubevirt.io/api/core/v1"
 
-	"github.com/alauda/kubevirt/client-go/version"
+	"github.com/alauda/kubevirt-client-go/version"
 )
 
 const (
