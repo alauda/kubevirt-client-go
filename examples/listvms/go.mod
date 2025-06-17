@@ -1,4 +1,4 @@
-module kubevirt.io/kubevirt/staging/src/kubevirt.io/client-go/examples/listvms
+module kubevirt.io/kubevirt/staging/src/github.com/alauda/kubevirt/client-go/examples/listvms
 
 go 1.12
 

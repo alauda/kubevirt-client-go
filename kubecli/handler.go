@@ -14,7 +14,7 @@ import (
 
 	virtv1 "kubevirt.io/api/core/v1"
 
-	"kubevirt.io/client-go/util"
+	"github.com/alauda/kubevirt/client-go/util"
 )
 
 const (

@@ -7,6 +7,19 @@ import (
 	context "context"
 	time "time"
 
+	containerizeddataimporter "github.com/alauda/kubevirt/client-go/containerizeddataimporter"
+	externalsnapshotter "github.com/alauda/kubevirt/client-go/externalsnapshotter"
+	kubevirt "github.com/alauda/kubevirt/client-go/kubevirt"
+	v1beta116 "github.com/alauda/kubevirt/client-go/kubevirt/typed/clone/v1beta1"
+	v122 "github.com/alauda/kubevirt/client-go/kubevirt/typed/core/v1"
+	v1beta117 "github.com/alauda/kubevirt/client-go/kubevirt/typed/export/v1beta1"
+	v1beta118 "github.com/alauda/kubevirt/client-go/kubevirt/typed/instancetype/v1beta1"
+	v1alpha110 "github.com/alauda/kubevirt/client-go/kubevirt/typed/migrations/v1alpha1"
+	v1alpha111 "github.com/alauda/kubevirt/client-go/kubevirt/typed/pool/v1alpha1"
+	v1beta119 "github.com/alauda/kubevirt/client-go/kubevirt/typed/snapshot/v1beta1"
+	networkattachmentdefinitionclient "github.com/alauda/kubevirt/client-go/networkattachmentdefinitionclient"
+	prometheusoperator "github.com/alauda/kubevirt/client-go/prometheusoperator"
+	version "github.com/alauda/kubevirt/client-go/version"
 	gomock "github.com/golang/mock/gomock"
 	v1 "github.com/openshift/client-go/route/clientset/versioned/typed/route/v1"
 	v10 "github.com/openshift/client-go/security/clientset/versioned/typed/security/v1"
@@ -39,7 +52,6 @@ import (
 	v1alpha12 "k8s.io/client-go/kubernetes/typed/certificates/v1alpha1"
 	v1beta14 "k8s.io/client-go/kubernetes/typed/certificates/v1beta1"
 	v110 "k8s.io/client-go/kubernetes/typed/coordination/v1"
-	v1alpha13 "k8s.io/client-go/kubernetes/typed/coordination/v1alpha1"
 	v1beta15 "k8s.io/client-go/kubernetes/typed/coordination/v1beta1"
 	v111 "k8s.io/client-go/kubernetes/typed/core/v1"
 	v112 "k8s.io/client-go/kubernetes/typed/discovery/v1"
@@ -72,19 +84,6 @@ import (
 	v1alpha19 "k8s.io/client-go/kubernetes/typed/storagemigration/v1alpha1"
 	rest "k8s.io/client-go/rest"
 	v121 "kubevirt.io/api/core/v1"
-	containerizeddataimporter "kubevirt.io/client-go/containerizeddataimporter"
-	externalsnapshotter "kubevirt.io/client-go/externalsnapshotter"
-	kubevirt "kubevirt.io/client-go/kubevirt"
-	v1beta116 "kubevirt.io/client-go/kubevirt/typed/clone/v1beta1"
-	v122 "kubevirt.io/client-go/kubevirt/typed/core/v1"
-	v1beta117 "kubevirt.io/client-go/kubevirt/typed/export/v1beta1"
-	v1beta118 "kubevirt.io/client-go/kubevirt/typed/instancetype/v1beta1"
-	v1alpha110 "kubevirt.io/client-go/kubevirt/typed/migrations/v1alpha1"
-	v1alpha111 "kubevirt.io/client-go/kubevirt/typed/pool/v1alpha1"
-	v1beta119 "kubevirt.io/client-go/kubevirt/typed/snapshot/v1beta1"
-	networkattachmentdefinitionclient "kubevirt.io/client-go/networkattachmentdefinitionclient"
-	prometheusoperator "kubevirt.io/client-go/prometheusoperator"
-	version "kubevirt.io/client-go/version"
 )
 
 // Mock of KubevirtClient interface
@@ -656,12 +655,6 @@ func (_m *MockKubevirtClient) CertificatesV1alpha1() v1alpha12.CertificatesV1alp
 
 func (_mr *_MockKubevirtClientRecorder) CertificatesV1alpha1() *gomock.Call {
 	return _mr.mock.ctrl.RecordCall(_mr.mock, "CertificatesV1alpha1")
-}
-
-func (_m *MockKubevirtClient) CoordinationV1alpha1() v1alpha13.CoordinationV1alpha1Interface {
-	ret := _m.ctrl.Call(_m, "CoordinationV1alpha1")
-	ret0, _ := ret[0].(v1alpha13.CoordinationV1alpha1Interface)
-	return ret0
 }
 
 func (_mr *_MockKubevirtClientRecorder) CoordinationV1alpha1() *gomock.Call {

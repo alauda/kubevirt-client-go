@@ -27,7 +27,7 @@ import (
 
 	routev1 "github.com/openshift/client-go/route/clientset/versioned/typed/route/v1"
 
-	clone "kubevirt.io/client-go/kubevirt/typed/clone/v1beta1"
+	clone "github.com/alauda/kubevirt/client-go/kubevirt/typed/clone/v1beta1"
 
 	secv1 "github.com/openshift/client-go/security/clientset/versioned/typed/security/v1"
 	"github.com/spf13/pflag"
@@ -43,14 +43,14 @@ import (
 	restclient "k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 
+	cdiclient "github.com/alauda/kubevirt/client-go/containerizeddataimporter"
+	k8ssnapshotclient "github.com/alauda/kubevirt/client-go/externalsnapshotter"
+	generatedclient "github.com/alauda/kubevirt/client-go/kubevirt"
+	migrationsv1 "github.com/alauda/kubevirt/client-go/kubevirt/typed/migrations/v1alpha1"
+	networkclient "github.com/alauda/kubevirt/client-go/networkattachmentdefinitionclient"
+	promclient "github.com/alauda/kubevirt/client-go/prometheusoperator"
 	"kubevirt.io/api/core"
 	v1 "kubevirt.io/api/core/v1"
-	cdiclient "kubevirt.io/client-go/containerizeddataimporter"
-	k8ssnapshotclient "kubevirt.io/client-go/externalsnapshotter"
-	generatedclient "kubevirt.io/client-go/kubevirt"
-	migrationsv1 "kubevirt.io/client-go/kubevirt/typed/migrations/v1alpha1"
-	networkclient "kubevirt.io/client-go/networkattachmentdefinitionclient"
-	promclient "kubevirt.io/client-go/prometheusoperator"
 )
 
 var (
